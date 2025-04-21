@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Break Brush';
+    src: url(font/Break\ Brush.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+body{
+    background-image: linear-gradient(to right, #0A3A40, #0F5959, #1D7373);
+}
+main{
+    background-color: #023535;
+    width: 1370px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 18px;
+    box-shadow:2px 2px 30px 15px rebeccapurple;
+    
+}
+
+h1{
+    font-family: 'Break Brush';
+    font-size: 55px;
+    text-align: center;
+    
+}
+h2{
+    font-family: 'Break Brush';
+    text-align: center;
+    font-size: 55px;
+}
+p{
+    font-family: Arial, 
+    Helvetica, sans-serif;
+    text-align: justify;
+    color: white ;
+    
+      
+}

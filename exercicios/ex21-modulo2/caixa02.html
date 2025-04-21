@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+<style>
+
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgba(39, 7, 107, 0.536);
+}
+header{
+background-color: rgb(45, 45, 185);
+padding: 10px;
+margin: 10px;
+box-shadow: 6px 4px 30px 7px  rgba(22, 1, 255, 0.515);
+border-radius: 20px;
+}
+nav{
+
+    background-color: rgba(0, 0, 255, 0.579);
+    padding: 10px;
+    box-shadow: 1px -1px 16px rgba(255, 255, 255, 0.778);
+}
+
+nav > a{
+    text-decoration: none;
+color: aliceblue;
+font-weight: bolder;
+margin-right: 30px;
+
+}
+nav > a:hover{
+    color: aquamarine;
+    text-decoration: underline;
+}
+a::after {
+    content: "-";
+}
+a::before{
+    content: "-";
+}
+main{
+    background-color: rgb(214, 222, 248);
+    width: auto;
+    
+}
+article{
+    background-color: rgb(255, 255, 255);
+    height: 220px;
+    text-align: justify;
+    border-radius: 5px;
+}
+footer{
+    color: rgb(255, 255, 255);
+background-color: black;
+text-align: center;
+border-radius: 20px;
+padding: 4px;
+
+}
+
+</style>
+</head>
+<body>
+    <header>
+<h1>Cabeçalho</h1>
+<nav>
+<a href="#">Sobre Nos</a>
+<a href="#">Protudos</a>
+<a href="#">Redes Socias</a>
+</nav>    
+    </header>
+    <article>
+        <h1>Sobre Nos</h1>
+        
+    <main>
+<h2>Savages</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla a at modi nostrum excepturi nam enim esse quos itaque velit! Quidem sequi ipsam praesentium incidunt reiciendis consequuntur alias minima animi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ut, dolorum perspiciatis pariatur quibusdam maiores doloribus magnam! Tempore assumenda architecto nemo quibusdam vero doloremque iste impedit necessitatibus sed, nostrum error.</p>
+    </main>
+</article>
+<footer>Desenvolvido pela Comunidade Savages &reg; </footer>
+</body>
+</html>
