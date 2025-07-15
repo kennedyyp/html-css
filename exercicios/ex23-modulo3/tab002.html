@@ -14,6 +14,12 @@
         vertical-align: middle;
         border-collapse: collapse;
     }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgb(231, 200, 221);
+    }
     thead, tfoot{
         background-color: blanchedalmond;
     }
@@ -37,6 +43,7 @@
 <!--
        ANATOMIA PARA TABELAS GRANDES 
      TABLE 
+       CAPTION
        THEAD - CABEÇA DA TABELA
         TR, TD, TH 
 
@@ -47,12 +54,12 @@
        TR, TD, TH 
        -->
 <TAble>
-
+<caption>População das Unidades Federativas do Brasil</caption>
 <thead>
 
     <tr>
-        <th >Estado</th>
-        <th >População</th>
+        <th scope="co1" >Estado</th>
+        <th scope="co1" style="width: 50px;">População</th>
     </tr>
 
 </thead>
@@ -72,11 +79,35 @@
     <td class="name">Rio de Janeiro</td>
     <td class="numb">17 264 943</td>
  </tr>
+<tr>
+    <td class="name"> Bahia</td>
+    <td class="numb">14 873 064</td>
+</tr>
+<tr>
+    <td class="name">Paraná</td>
+    <td class="numb">11 433 957</td>
+</tr>
+<tr>
+    <td class="name">Rio Grande do Sul</td>
+    <td class="numb">11 377 239</td>
+</tr>
+<tr>
+    <td class="name">Tocantins</td>
+    <td class="numb">277 466 763</td>
+</tr>
+<tr>
+    <td class="name">Piauí</td>
+    <td class="numb">251 756,515</td>
+</tr>
+<tr>
+    <td class="name">São Paulo</td>
+    <td class="numb">248 219,481</td>
+</tr>
 </tbody>
 
 <tfoot>
 <tr>
-    <th>Total de Habitantes</th>
+    <th scope="co1">Total de Habitantes</th>
     <td class="numb">9999999</td>
 </tr>
 </tfoot>
