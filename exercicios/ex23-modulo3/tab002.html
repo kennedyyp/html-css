@@ -13,6 +13,7 @@
         width: 500px;
         vertical-align: middle;
         border-collapse: collapse;
+        position: relative;
     }
     caption{
         font-size: 1.5em;
@@ -22,6 +23,16 @@
     }
     thead, tfoot{
         background-color: blanchedalmond;
+    }
+
+    thead > tr > th {
+
+        position: sticky;
+        top: -1;
+        background-color: antiquewhite;
+    }
+    tbody > tr:nth-child(2n){
+        background-color: rgb(240, 240, 158);
     }
     
         th,td{
@@ -110,6 +121,7 @@
     <th scope="co1">Total de Habitantes</th>
     <td class="numb">9999999</td>
 </tr>
+
 </tfoot>
 
 
