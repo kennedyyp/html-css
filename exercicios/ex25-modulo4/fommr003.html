@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            min-height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input{
+            margin: 10px;
+            
+        }
+
+    
+       
+    </style>
+</head>
+<body>
+     
+    <h1>Teste form | inputs</h1>
+    <form action="cadrasto.php" method="post" autocomplete="on" re>
+
+    <div>
+        <input type="text" name="isu" id="isu"  minlength="3" maxlength="50" placeholder="ex: joao" autocomplete="name">
+        <label for="isu">Usuario | text</label>
+    </div>
+
+    <div>
+        <input type="password" name="senha" id="senha " minlength="8" maxlength="32" required placeholder="ex:123@" autocomplete="current-password">
+        <label for="senha">Senha | password</label>
+    </div>
+
+    <div>
+        <input type="number" name="media" id="media" min="0" max="10"  placeholder="0 a 10" step="0.1"> <!--step em quanto intevalo vai aumenta o numero-->
+        <label for="media">Media | number</label> 
+        
+        <br>
+
+        <input type="month" >
+        <label for="">Mes da nota | month</label>
+    </div>
+
+    <div>
+        <input type="date">
+        <label for="">Data da prova | date</label>
+    </div>
+
+    <div>
+        <input type="time">
+        <label for="">Horario | time</label>
+    </div>
+
+    <div>
+        <input type="submit" name="envia" id="envia">
+        <input type="reset" name="apaga" id="apaga" value="apagar">
+    </div>
+    </form>
+</body>
+</html>
