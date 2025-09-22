@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .formu{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+  
+
+
+
+    </style>
+</head>
+<body>
+    
+        <div class="formu">
+            <h1>First form</h1>
+            <form action="cadrasto.php" method="post" autocomplete="off">
+
+                <div class="form">
+                    <input type="text" name="nome" id="nome">
+                    <label for="nome">Nome</label>
+                </div>
+                 <div class="form">
+                    <input type="text" name="sobre" id="sobre">
+                    <label for="sobre">Sobrenome</label>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+        </div>
+        </form>
+    
+
+<!--name > melhor para php e html  | id melhor para javascrip-->
+</body>
+</html>
