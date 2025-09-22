@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            min-height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input{}
+       
+    </style>
+</head>
+<body>
+    <!--min/max lenght atributo do input para defini o maximo ou minino de cararcter nessesaria  & size define o tamnho da caixa do input-->
+    <h1>Teste form</h1>
+    <form action="cadrasto.php" method="post" autocomplete="off" re>
+
+    <div>
+        <input type="text" name="isu" id="isu"  minlength="3" maxlength="50" placeholder="ex: joao">
+        <label for="isu">Usuario</label>
+    </div>
+
+    <div>
+        <input type="password" name="senha" id="senha " minlength="8" maxlength="32" required placeholder="ex:123@">
+        <label for="senha">Senha</label>
+    </div>
+
+    <div>
+        <input type="submit" name="envia" id="envia">
+        <input type="reset" name="apaga" id="apaga" value="apagar">
+    </div>
+    </form>
+
+</body>
+</html>
