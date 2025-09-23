@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form Checkbox & Radio Button</h1>
+
+    <form action="cadrasto.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <div>
+
+                <input type="checkbox" name="on" id="on">  <label for="on">Futebol<label>               <br>                                                                                    
+                
+                <input type="checkbox" name="bas" id="bas"> <label for="bas">Basquete</label>  <br>
+
+                <input type="checkbox" name="vo" id="vo" > <label for="vo">Volei</label>     <br>
+
+                <input type="checkbox" name="nat" id="nat"> <label for="nat">Natação </label>  <br>
+
+                <input type="checkbox" name="te" id="te" > <label for="te">Tenis</label>  <br>
+
+
+            </div>
+
+
+            <div>
+                
+                <input type="submit" value="enviar">
+                <input type="reset" value="apagar">
+
+            </div>
+        </fieldset>
+
+            <fieldset>
+                <legend>sexo</legend>
+    
+                <div>
+    
+                    <input type="radio" name="sexo" id="h"> <label for="">H</label>
+                    <input type="radio" name="sexo" id="m"> <label for="">F</label>
+
+                </div>
+
+            </fieldset>
+           
+           
+            
+    </form>
+</body>
+</html>

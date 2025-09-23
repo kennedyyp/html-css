@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+                     <!--Estuda sobre RegEx-->
+    <h1>form com tel e email</h1>
+
+    <form action="cadrasto.php" method="post" autocomplete="on">
+        <fieldset>
+                  <legend>Dados pessoais</legend>
+            <div>
+                <input type="email" name="email" id="email" required autocomplete="email">
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input type="tel" name="tel" id="tel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                <label for="tel">Telefone</label>
+            </div>
+            <div>
+                <input type="submit" value="envia">
+                <input type="reset" value="apagar">
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
