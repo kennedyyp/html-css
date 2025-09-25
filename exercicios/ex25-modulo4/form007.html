@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de formularios</h1>
+    <form action="cadrasto.php" method="post" autocomplete="on">
+        <fieldset>
+          
+            <div>
+                    <label for="estado">estado</label>
+                    <select name="estado" id="estado">
+
+                        <optgroup label="Sudeste">
+                            <option value="sp">São Paulo</option>
+                            <option value="Mg">Minas Gerais</option>
+                            <option value="Rj">Rio de Janeiro</option>
+                            <option value="Es">Espirito Santo</option>
+                        </optgroup>
+
+                        <optgroup label="Nordeste">
+                            <option value="BA">Bahia</option>
+                            <option value="pb">Pernambuco</option>
+                        </optgroup>
+                      
+
+                    </select>
+                    
+
+            </div>
+
+            <div>
+                <label for="p">Proffissoes</label>
+                <input type="text" name="p" id="p" list="lisprof">
+                <datalist id="lisprof">
+                    <option >Administrador</option>
+                    <option >Professor</option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="">Sugestao</label>
+                <textarea name="" id="" placeholder="Ex: muito bom"></textarea>
+            </div>
+
+
+            <div>
+                <input type="submit" value="enviar">
+                <input type="reset" value="apagar">
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
