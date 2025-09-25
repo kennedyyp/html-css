@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de formularios</h1>
+    <form action="cadrasto.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>teste</legend>
+
+                <div>
+                        <label for="cor">Cor:</label>
+                        <input type="color" id="cor" name="cor">
+
+                </div>
+                
+                <div>
+
+                    <label for="">nivel</label>
+                    <input type="range" id="nivel" name="nivel" min="1" max="5"> 
+                </div>
+
+                <div>
+                    <label for="foto">foto:</label>
+                    <input type="file">
+                </div>
+
+
+            <div>
+                <input type="submit" value="enviar">
+                <input type="reset" value="apagar">
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
